@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lineToFitb 1`] = `
+Object {
+  "examples": Array [
+    "golf",
+    "whether we will go to the party",
+  ],
+  "id": Any<String>,
+  "prompts": Array [
+    "topic",
+    "question",
+  ],
+  "source": "I am writing something here about __BLANK__ and the key question is __BLANK__.",
+  "tags": Array [],
+}
+`;

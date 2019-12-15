@@ -1,0 +1,9 @@
+[
+  {
+    "examples": ["golf", "whether we will go to the party"],
+    "prompts": ["topic", "question"],
+    "id": "1576427193216",
+    "source": "I am writing something here about __BLANK__ and the key question is __BLANK__.",
+    "tags": []
+  }
+]
