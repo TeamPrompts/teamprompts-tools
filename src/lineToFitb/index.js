@@ -9,8 +9,8 @@ const lines = fs
   .split('\n')
   .filter(Boolean);
 
-const fitbs = lines.map(line =>
-  lineToFitb({ id: Date.now().toString(), line })
+const fitbs = lines.map((line, index) =>
+  lineToFitb({ id: index.toString(), line })
 );
 
 fs.writeFileSync(

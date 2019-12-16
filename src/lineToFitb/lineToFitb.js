@@ -12,11 +12,21 @@ function lineToFitb({ id, line }) {
     .map(element => JSON.parse(element))
     .reduce(
       (accumulator, current) => {
-        accumulator.examples.push(current[1]);
-        accumulator.prompts.push(current[0]);
+        if (current[1]) {
+          if (accumulator.examples === undefined) {
+            accumulator.examples = [];
+          }
+          accumulator.examples.push(current[1]);
+        }
+        if (current[0]) {
+          if (accumulator.prompts === undefined) {
+            accumulator.prompts = [];
+          }
+          accumulator.prompts.push(current[0]);
+        }
         return accumulator;
       },
-      { examples: [], prompts: [] }
+      { examples: undefined, prompts: undefined }
     );
 
   return {
