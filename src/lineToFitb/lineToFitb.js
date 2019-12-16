@@ -1,6 +1,6 @@
 const SEPARATOR = '__BLANK__';
 
-function lineToFitb({ id, line }) {
+function lineToFitb({ id, line, tags }) {
   const parts = line.match(/\[(.*?)\]/g);
 
   const source = parts.reduce(
@@ -33,7 +33,7 @@ function lineToFitb({ id, line }) {
     ...examplesAndPrompts,
     id,
     source,
-    tags: []
+    tags
   };
 }
 

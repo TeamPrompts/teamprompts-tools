@@ -26,5 +26,8 @@
     "jest": "^24.9.0",
     "prettier": "^1.19.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "dotenv": "^8.2.0"
+  }
 }

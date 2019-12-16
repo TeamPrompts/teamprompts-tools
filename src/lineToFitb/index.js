@@ -10,10 +10,18 @@ const lines = fs
   .filter(Boolean);
 
 const fitbs = lines.map((line, index) =>
-  lineToFitb({ id: index.toString(), line })
+  lineToFitb({
+    id: index.toString(),
+    line,
+    tags: ['recG0ANQWrp3SRvvY', 'rechbGc1FLmwxb9Hg', 'recWU3KLlRvtGhOIM']
+  })
 );
 
 fs.writeFileSync(
-  join(__dirname, `${FILE_NAME}.json`),
+  join(__dirname, `../createRecords/${FILE_NAME}.json`),
   JSON.stringify(fitbs, 0, 2)
 );
+
+// recG0ANQWrp3SRvvY: decision making
+// rechbGc1FLmwxb9Hg: measurement
+// recWU3KLlRvtGhOIM: research
